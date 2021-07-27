@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;  
+}
+body {
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 505px;
+    height: 792px;
+    background-color: rgb(250, 250, 250, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.content-container-top {
+    width: 350px;
+    height: 380px;
+    margin-top: 40px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+.logo{
+    width: 90%;
+    height: 30%;
+    margin: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="text"], input[type="password"], button {
+    width: 268px;
+    height: 38px;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    margin: 5px 0;
+    border: none;
+    color: rgb(38, 38,38);
+    background-color: rgb(250, 250, 250, 1);
+    border: 1px solid lightgrey;
+
+}
+button {
+    color: white;
+    font-size: 15px;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: skyblue;
+}
+h5 {
+    width: 75%; 
+    text-align: center; 
+    border-bottom: 1px solid lightgrey; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    color: grey;
+    transform: translateX(17%);
+} 
+h5 span { 
+     background:#fff; 
+     padding:0 5px; 
+ }
+ .facebook {
+     display: flex;
+     justify-content: center;
+     color: #385185;
+     font-family: "Segoe UI";
+     font-weight: 600;
+     font-size: 1em;
+     margin: 15px;
+ }
+ .facebook > i {
+   margin-right: 10px;
+   font-size: 1.17em;
+ }
+ .forgot {
+     text-align: center;
+     font-size: .9em;
+     margin: 10px;
+     color: rgb(0, 55, 107);
+ }
+.content-container-mid{
+    width: 350px;
+    height: 63px;
+    margin: 10px 0;
+    border: 1px solid lightgray;
+}
+.content-container-mid > p {
+    text-align: center;
+    line-height: 63px;
+}
+.content-container-mid a {
+    text-decoration: none;
+    font-weight: 600;
+}
+.content-container-bottom{
+  width: 350px;
+  height: 102px;
+  text-align: center;
+  margin: 15px 0;
+}
+.app {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+
+}
+.app img {
+    width: 136px;
+    height: 40px;
+    margin: 0 5px;
+}
+footer {
+    width: 505px;
+    height: 151px;
+    border: 1px solid black;
+    background-color: fuchsia;
+}
