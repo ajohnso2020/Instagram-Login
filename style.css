@@ -6,9 +6,14 @@ body {
     background-color: wheat;
     display: flex;
     flex-direction: column;
+    margin: auto;
+    height: 100vh;
+}
+.outer-container {
+    background-color: teal;
 }
 .container {
-    width: 505px;
+    width: 500px;
     height: 792px;
     background-color: rgb(250, 250, 250, 1);
     display: flex;
@@ -22,6 +27,7 @@ body {
     margin-top: 50px;
     border: 1px solid lightgray;
     background-color: white;
+    margin: auto;
 }
 .logo{
     width: 90%;
@@ -32,6 +38,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 input[type="text"], input[type="password"], button {
     width: 268px;
@@ -56,13 +63,17 @@ button {
     background-color: skyblue;
 }
 h5 {
-    width: 75%; 
-    text-align: center; 
-    border-bottom: 1px solid lightgrey; 
+    width: 75%;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
     line-height: 0.1em;
-    margin: 10px 0 20px; 
+    margin: 10px 0 20px;
     color: grey;
     transform: translateX(17%);
+    -webkit-transform: translateX(17%);
+    -moz-transform: translateX(17%);
+    -ms-transform: translateX(17%);
+    -o-transform: translateX(17%);
 } 
 h5 span { 
      background:#fff; 
@@ -157,8 +168,41 @@ select {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
-  -o-border-radius: 0;
+  -webkit-border: 0;
 }
-select::after {
-    content: url("down-chevron.svg");
+.last-section form {
+    display: inline-block;
 }
+form > i {
+    margin-left: -15px;
+    margin-right: 20px;
+}
+.arrow {
+    border: solid grey;
+    border-width: 0 .5px .5px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+@media only screen and (min-width: 876px) {
+    .outer-container {
+      width: 1000px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .container {
+        width: 50%;
+    }
+    .last-container {
+        visibility: hidden;
+    }
+    .image-container {
+        width: 50%;
+    }
+  }
