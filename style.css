@@ -146,6 +146,7 @@ nav li, a {
     list-style: none;
     text-decoration: none;
     color: rgb(142, 142, 142);
+    flex-wrap: wrap;
 }
 .last-section {
     display: flex;
@@ -190,6 +191,9 @@ form > i {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
 }
+.image-container {
+display: none;
+}
 @media only screen and (min-width: 876px) {
     .outer-container {
       width: 1000px;
@@ -198,11 +202,23 @@ form > i {
     }
     .container {
         width: 50%;
+        
     }
     .last-container {
-        visibility: hidden;
+        display: none;
     }
     .image-container {
         width: 50%;
+        display: flex;
+    }
+    .image-container img:nth-child(1) {
+        width: 500px;
+        height: 700px;
+        margin: auto;
+        align-items: center;
+    }
+    .image-container img:nth-child(2) {
+        width: 200px;
+        height: 400px;
     }
   }
