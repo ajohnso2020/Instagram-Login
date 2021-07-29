@@ -3,18 +3,13 @@
     margin: 0;  
 }
 body {
-    background-color: wheat;
     display: flex;
     flex-direction: column;
     margin: auto;
-    height: 100vh;
-}
-.outer-container {
-    background-color: teal;
 }
 .container {
     width: 500px;
-    height: 792px;
+    height: 770px;
     background-color: rgb(250, 250, 250, 1);
     display: flex;
     flex-direction: column;
@@ -24,7 +19,7 @@ body {
 .content-container-top {
     width: 350px;
     height: 380px;
-    margin-top: -20px;
+    margin-top: -15px;
     border: 1px solid lightgray;
     background-color: white;
     margin-top: 20px;
@@ -134,31 +129,28 @@ h5 span {
     margin: 0 5px;
 }
 .last-container {
-    width: 95%;
+    width: 70%;
     height: 151px;
-    position: relative;
-    margin-top: -20px;
-    position: fixed;
-    bottom: 0;
+    margin: auto;
 }
 nav {
     display: flex;
     justify-content: space-around;
     font-size: .9em;
-    line-height: 151px;
+    margin-top: -125px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 nav li, a {
     list-style: none;
     text-decoration: none;
     color: rgb(142, 142, 142);
+    margin: 1px;
 }
 .last-section {
     display: flex;
     justify-content: center;
     font-size: .9em;
-    position: absolute;
-    top: 70%;
-    left: 25%;
     color: rgb(142, 142, 142);
 }
 select {
@@ -170,17 +162,23 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
-
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 .last-section form {
     display: inline-block;
+    margin-left: 110px;
+}
+.last-section p {
+    margin-right: 35px;
 }
 form > i {
     margin-left: -15px;
-    margin-right: 20px;
 }
 .arrow {
-    border: solid grey;
+    border: solid rgb(3, 2, 2);
     border-width: 0 .5px .5px 0;
     display: inline-block;
     padding: 3px;
@@ -195,36 +193,46 @@ form > i {
 .image-container {
 display: none;
 }
+
 @media only screen and (min-width: 876px) {
     .outer-container {
       width: 1000px;
       display: flex;
       flex-direction: row-reverse;
+      position: relative;
     }
     .container {
-        width: 50%;   
+      width: 50%;   
     }
+
     .last-container {
-     width: 100%;
-     text-align: center;
+      width: 65%;
+      margin: auto;
+      position: absolute;
+      text-align: center;
+      top: 110%;
+      left: 20%;
+    }
+    .last-section form, p{
+      margin: 10px;
     }
     .image-container {
         width: 50%;
         display: grid;
         position: relative;
+        margin-bottom: 100px;
     }
     .image-container img:nth-child(1){
         width: 550px;
-        height: 700px;
-        margin: auto;
+        height: 650px;
         align-items: center;
     }
     .image-container img:nth-child(2){
         width: 290px;
-        height: 490px;
+        height: 450px;
         position: absolute;
         left: 36%;
-        top: 19%;
+        top: 15%;
         border: 3px solid black;
 }
   }
