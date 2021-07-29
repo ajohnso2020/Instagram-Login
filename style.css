@@ -131,10 +131,10 @@ h5 span {
     margin: 0 5px;
 }
 .last-container {
-    width: 505px;
+    width: 500px;
     height: 151px;
     position: relative;
-    margin-top: -50px;
+    margin-top: -75px;
 }
 nav {
     display: flex;
@@ -166,10 +166,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -webkit-border: 0;
+
 }
 .last-section form {
     display: inline-block;
@@ -201,24 +198,26 @@ display: none;
       flex-direction: row-reverse;
     }
     .container {
-        width: 50%;
-        
-    }
-    .last-container {
-        display: none;
+        width: 50%;   
     }
     .image-container {
         width: 50%;
-        display: flex;
+        display: grid;
+        position: relative;
     }
-    .image-container img:nth-child(1) {
-        width: 500px;
+    .image-container img:nth-child(1){
+        width: 550px;
         height: 700px;
         margin: auto;
         align-items: center;
+
     }
-    .image-container img:nth-child(2) {
-        width: 200px;
-        height: 400px;
-    }
+    .image-container img:nth-child(2){
+        width: 290px;
+        height: 490px;
+        position: absolute;
+        left: 36%;
+        top: 19%;
+        border: 3px solid black;
+}
   }
